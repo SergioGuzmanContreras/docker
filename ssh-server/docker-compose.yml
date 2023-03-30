@@ -1,0 +1,10 @@
+services:
+  ssh_server:
+    container_name: ssh_server
+    image: ssh_server
+    build: 
+      context: ssh-server
+    networks:
+      - net
+networks:
+  net:
